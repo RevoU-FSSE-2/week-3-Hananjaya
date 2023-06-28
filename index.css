@@ -11,15 +11,8 @@ body, html {
   }
 
 /* ========== Nav ========== */
-body nav img {
-    height: 35px;
-    padding: 0px;
-    margin-top:5px;
-    margin-bottom: 0px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
 
+/*
 nav {
     position: fixed;
     overflow: hidden;
