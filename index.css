@@ -141,7 +141,7 @@ h2 {
  
 /* ========== Videos ========== */
 
-#section-video .flex-container {
+.flex-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -217,4 +217,161 @@ textarea {
     text-align: center;
     padding: 20px;
     background-color: #212121;
+}
+
+
+@media only screen and (max-width: 320px) {
+    .flex-container {
+        display: block;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    .relative-container {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 25px;
+    }
+    .hero-text p {
+        font-size: 10px;
+    }
+
+    #Hall-of-Fame h2{
+        font-size: 20px;
+    }
+    #Hall-of-Fame figcaption {
+        display: none;
+    }
+
+    #Hall-of-Fame .grid-container{
+        display: block;
+    }
+
+    #section-video h2 {
+        font-size: 20px;
+    }
+
+    #form-section h3 {
+        font-size: 15px;
+    }
+
+    #form-section fieldset {
+        max-width: 85%;
+    }
+
+    .aboutriding{
+        display: none;
+    }
+}
+
+  
+@media only screen and (max-width: 376px) {
+    .flex-container {
+        display: block;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    .relative-container {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 25px;
+    }
+    .hero-text p {
+        font-size: 10px;
+    }
+
+    #Hall-of-Fame h2{
+        font-size: 20px;
+    }
+    #Hall-of-Fame figcaption {
+        display: none;
+    }
+
+    #Hall-of-Fame .grid-container{
+        display: block;
+    }
+
+    #section-video h2 {
+        font-size: 20px;
+    }
+
+    #form-section h3 {
+        font-size: 15px;
+    }
+
+    #form-section fieldset {
+        max-width: 85%;
+    }
+
+    .aboutriding{
+        display: none;
+    }
+}
+
+  
+@media only screen and (max-width: 426px) {
+
+
+    .flex-container {
+        display: block;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 25px;
+    }
+    .hero-text p {
+        font-size: 10px;
+    }
+
+    #Hall-of-Fame h2{
+        font-size: 20px;
+    }
+    #Hall-of-Fame figcaption {
+        display: none;
+    }
+
+    #Hall-of-Fame .grid-container{
+        display: block;
+    }
+
+    #section-video h2 {
+        font-size: 20px;
+    }
+
+    #form-section h3 {
+        font-size: 15px;
+    }
+
+    #form-section fieldset {
+        max-width: 85%;
+    }
+
+    .aboutriding{
+        display: none;
+    }
 }
