@@ -3,16 +3,16 @@
     margin: 0px;
     padding: 0px;
     font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 body, html {
     height: 100%;
-    margin: 0;
-  }
+}
+/*========== Nav ==========*/ 
 
-/* ========== Nav ========== */
 
-/*
 nav {
     position: fixed;
     overflow: hidden;
@@ -59,7 +59,7 @@ nav > span {
     position: relative;
 }
 
-/* ========== Header ========== */
+/*========== Header ========== */
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/IMG_20181018_190918_780.jpg");
