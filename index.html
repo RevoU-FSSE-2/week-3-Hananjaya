@@ -8,7 +8,6 @@
     <meta name="keywords" content="HTML, CSS, JavaScript"/>
     <meta name="author" content="Ahlan Hanan Wijaya"/>
     <link rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto"/>
     <link rel="icon" href="images/helmet.png"/>
 </head>
 
@@ -31,6 +30,10 @@
         </ul>
     </nav>
 
+    <div class="gear">
+        <img src="images/gear2.png" id="gear">
+    </div>
+    
     <header class="hero-image">
         <section class="hero-text">
             <h1>Welcome to<br> 
@@ -103,13 +106,29 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
             </div>
-          </section>
+        </section>
+        
+        
+        <section>
+            <picture id="wheelie">
+                <source media="(max-width:426px)" srcset="images/piston.png">
+                <source media="(max-width:768px)" srcset="images/work.png">
+                <source media="(min-width:769px)" srcset="images/wheelie.png">
+                <img src="images/wheelie.png" alt="motor">
+            </picture>
+        </section>
 
         <section id="form-section">
             <div>    
                 <h3>I'm inviting you to ride with us. No rules, no boundaries, just 150 Unlimited</h3>
-                <h4>Let's burn some rubber!</h4>
             </div>
+            
+            <div class="wrapper">
+                <div class="typing">
+                  Let's burn some rubber!
+                </div>
+            </div>
+
             <div>
             <fieldset>
                 <legend>Personal information &Phi;</legend>
@@ -128,7 +147,7 @@
                 </form>
             </fieldset>
             </div>
-            
+
             <div>
             <fieldset class="aboutriding">
                 <legend>All about riding &Omega;</legend>
@@ -185,6 +204,7 @@
         </section>   
     </main>
 
+    <script src="index.js"></script>
     
     <footer class="footer">
         <p>Hananjaya Project R</p>

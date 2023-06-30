@@ -2,14 +2,20 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: "Roboto", sans-serif;
     list-style: none;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 body, html {
     height: 100%;
 }
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(fonts/Dosis-VariableFont_wght.ttf) format ('woff')}
+
+
 /*========== Nav ==========*/ 
 
 
@@ -25,7 +31,17 @@ nav {
     z-index: 1;
     color: #ffffff;
 }
-  
+
+.gear img {
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    right: 20px;
+    top: 60px;
+
+  }
+
+
 nav > ul {
     margin-left: auto;
     margin-right: 16px;
@@ -81,6 +97,7 @@ nav > span {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
+    text-shadow: 10px 10px 10px black;
 }
 
 .hero-text h1{
@@ -109,6 +126,7 @@ h2 {
     text-align: center;
     padding: 20px;
     background-color: #212121;
+    text-shadow: 3px 3px 5px rgb(212, 212, 212)
 }
 
 /* ========== Hall of fame ========== */
@@ -130,9 +148,14 @@ h2 {
 #Hall-of-Fame .grid-container img {
     width:85%;
     object-fit: fill;
-    margin: auto;
+    margin: 10px;
     border-radius: 5px;
+    transition: transform .2s;
 }
+
+.grid-container img:hover {
+    transform: scale(1.05); 
+  }
 
 #item1 {
     grid-row: 1 / span 2;
@@ -169,6 +192,45 @@ h4 {
     text-align: center;
     font-style:italic;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing {
+    margin-bottom: 30px;
+    width: 20ch;
+    animation: typing 2s steps(23), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 10px solid;
+    font-family:'Roboto', sans-serif;
+    font-size: 23px;
+  }
+
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+#wheelie img {
+    display: block;
+    max-width: 20%;
+    justify-content: center;
+    margin: auto;
 }
 
 #form-section {
@@ -221,6 +283,10 @@ textarea {
 
 
 @media only screen and (max-width: 320px) {
+    .gear img {
+        display: none;
+    }
+
     .flex-container {
         display: block;
     }
@@ -274,6 +340,11 @@ textarea {
 
   
 @media only screen and (max-width: 376px) {
+
+    .gear img {
+        display: none;
+    }
+    
     .flex-container {
         display: block;
     }
@@ -328,9 +399,16 @@ textarea {
   
 @media only screen and (max-width: 426px) {
 
-
+    .gear img {
+        display: none;
+    }
+    
     .flex-container {
         display: block;
+    }
+
+    .relative-container {
+        display: none;
     }
 
     iframe {
@@ -373,5 +451,15 @@ textarea {
 
     .aboutriding{
         display: none;
+    }
+}
+
+@media only screen and (min-width: 426px) {
+    .mobile {
+        display: none;
+    }
+
+    .relative-container {
+        margin-left: 15px;
     }
 }
